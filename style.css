@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+/* Colors
+### Primary
+
+- Orange: hsl(26, 100%, 55%)
+- Pale orange: hsl(25, 100%, 94%)
+
+### Neutral
+
+- Very dark blue: hsl(220, 13%, 13%)
+- Dark grayish blue: hsl(219, 9%, 45%)
+- Grayish blue: hsl(220, 14%, 75%)
+- Light grayish blue: hsl(223, 64%, 98%)
+- White: hsl(0, 0%, 100%)
+- Black (with 75% opacity for lightbox background): hsl(0, 0%, 0%)
+
+
+
+*/
+
+:root {
+  --main-orange: hsl(26, 100%, 55%);
+  --pale-orange: hsl(25, 100%, 94%);
+
+  --dk-gray-blue: hsl(219, 9%, 45%);
+  --gray-blue: hsl(220, 14%, 75%);
+  --lt-gray-blue: hsl(223, 64%, 98%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  margin: 0 auto;
+  max-width: 70%;
+  line-height: 1.6;
+  font-family: "Kumbh Sans", Arial, Helvetica, sans-serif;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #a7a7a7;
+}
+
+.navbar__nav {
+  display: flex;
+}
+
+#logo {
+  width: 200px;
+}
+
+.navbar__list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+.navbar__item {
+  margin-left: 4rem;
+}
+
+.navbar__container--user {
+  display: flex;
+  align-items: center;
+}
+
+#cart {
+  width: 15%;
+}
+
+#user-photo {
+  width: 40%;
+  margin-left: 4rem;
+}
+
+/* Main section */
+
+.restrictor {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.product__container {
+  display: flex;
+  padding: 4rem 0;
+  padding-bottom: 0rem;
+}
+
+.product__gallery {
+  width: 90%;
+}
+
+.product__gallery-main {
+  display: flex;
+  justify-content: center;
+}
+
+.main__img {
+  width: 100%;
+  border-radius: 1rem;
+}
+
+.product__gallery-items {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+.img__thumb {
+  border-radius: 10px;
+  width: 40%;
+}
+
+.product__details {
+  display: flex;
+  padding: 8rem 2rem;
+
+  width: 50%;
+}
+
+.product__company {
+  text-transform: uppercase;
+  color: var(--main-orange);
+  font-weight: 700;
+  letter-spacing: 0.3rem;
+}
+
+.product__name {
+  padding: 1rem 0;
+  font-size: 4rem;
+  line-height: 1;
+}
+
+.product__description {
+  padding: 1rem 0;
+  color: var(--gray-blue);
+  font-size: 20px;
+}
+
+.product__price {
+  display: inline;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.product__discount-percentage {
+  background-color: var(--pale-orange);
+  padding: 0.5rem 1rem;
+  margin-left: 0.5rem;
+  font-weight: 700;
+  color: var(--main-orange);
+  border-radius: 5px;
+}
+
+.product__discount-amount {
+  font-weight: 700;
+  color: var(--gray-blue);
+  text-decoration: line-through;
+  font-size: 20px;
+}
+
+.attribution {
+  text-align: center;
+}
