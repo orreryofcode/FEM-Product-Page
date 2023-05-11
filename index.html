@@ -57,17 +57,17 @@
                 class="img__thumb"
               />
               <img
-                src="./images/image-product-1-thumbnail.jpg"
+                src="./images/image-product-2-thumbnail.jpg"
                 alt="product 2"
                 class="img__thumb"
               />
               <img
-                src="./images/image-product-1-thumbnail.jpg"
+                src="./images/image-product-3-thumbnail.jpg"
                 alt="product 3"
                 class="img__thumb"
               />
               <img
-                src="./images/image-product-1-thumbnail.jpg"
+                src="./images/image-product-4-thumbnail.jpg"
                 alt="product 4"
                 class="img__thumb"
               />
@@ -93,9 +93,13 @@
 
             <div class="product__cart-wrapper">
               <div class="product__cart-qty">
-                <button class="btn qty-btn"><p>-</p></button>
-                <p class="cart-qty">0</p>
-                <button class="btn qty-btn"><p>+</p></button>
+                <button class="btn qty-btn" id="decrement-cart">
+                  <p>-</p>
+                </button>
+                <p class="cart-qty" id="cart-qty">0</p>
+                <button class="btn qty-btn" id="increment-cart">
+                  <p>+</p>
+                </button>
               </div>
               <button class="btn cart-btn">
                 <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg">
@@ -120,5 +124,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Raul Menendez</a>.
     </div>
+
+    <script src="./script.js"></script>
   </body>
 </html>
